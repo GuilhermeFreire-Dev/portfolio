@@ -1,0 +1,18 @@
+import Title from '../components/title';
+import { Content } from '../lib/content';
+
+export default function Contacts() {
+  return (
+    <div>
+      <Title title={'Contato'}></Title>
+      {Content.contacts.map((contact) => {
+        return (
+          <a href={contact.url} target="_blank" className="flex my-3">
+            {contact.icon}
+            <p>{contact.label}</p>
+          </a>
+        );
+      })}
+    </div>
+  );
+}
