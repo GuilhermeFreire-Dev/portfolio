@@ -82,7 +82,10 @@ export const Content = {
       technologies: [
         {
           icon: (
-            <IoLogoGithub size={42} className="text-slate-950 dark:text-slate-50"></IoLogoGithub>
+            <IoLogoGithub
+              size={42}
+              className="text-slate-950 dark:text-slate-50"
+            ></IoLogoGithub>
           ),
           name: 'GitHub'
         },
@@ -98,7 +101,12 @@ export const Content = {
       type: 'Ferramentas',
       technologies: [
         {
-          icon: <IoLogoTux size={42} className="text-black dark:text-white"></IoLogoTux>,
+          icon: (
+            <IoLogoTux
+              size={42}
+              className="text-black dark:text-white"
+            ></IoLogoTux>
+          ),
           name: 'WSL 2'
         },
         {
