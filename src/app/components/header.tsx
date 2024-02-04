@@ -16,7 +16,7 @@ export default function Header() {
   const [fullPhoto, setFullPhoto] = useState(false);
 
   return (
-    <div className="border border-neutral-300 bg-neutral-50 rounded-xl p-5 mb-5">
+    <div className="border border-neutral-300 bg-neutral-50 rounded-xl p-5 mb-5 dark:bg-neutral-900 dark:text-neutral-50 dark:border-neutral-900">
       <div className="flex items-end">
         <div
           className="w-20 h-20 rounded-full border-neutral-300 shadow-md mr-5 bg-cover bg-no-repeat cursor-pointer"

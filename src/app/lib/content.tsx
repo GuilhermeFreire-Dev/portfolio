@@ -82,7 +82,7 @@ export const Content = {
       technologies: [
         {
           icon: (
-            <IoLogoGithub size={42} className="text-slate-950"></IoLogoGithub>
+            <IoLogoGithub size={42} className="text-slate-950 dark:text-slate-50"></IoLogoGithub>
           ),
           name: 'GitHub'
         },
@@ -98,7 +98,7 @@ export const Content = {
       type: 'Ferramentas',
       technologies: [
         {
-          icon: <IoLogoTux size={42} className="text-black"></IoLogoTux>,
+          icon: <IoLogoTux size={42} className="text-black dark:text-white"></IoLogoTux>,
           name: 'WSL 2'
         },
         {
@@ -165,7 +165,7 @@ export const Content = {
     {
       name: 'Este Portifólio',
       description: 'Portifólio pessoal',
-      url: 'https://www.evolucaobike.com.br',
+      url: 'https://github.com/GuilhermeFreire-Dev/portfolio',
       storedOnGitHub: true,
       label: 'GitHub'
     }

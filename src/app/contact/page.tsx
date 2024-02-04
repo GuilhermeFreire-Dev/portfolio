@@ -10,7 +10,7 @@ export default function Contacts() {
           <a
             href={contact.url}
             target="_blank"
-            className="flex my-3"
+            className="text-sm sm:text-base flex items-center my-3"
             rel="noreferrer"
             key={contact.label}
           >
