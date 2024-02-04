@@ -2,7 +2,14 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
-import { RiBookMarkFill, RiBox3Fill, RiGraduationCapFill, RiLightbulbFill, RiMailFill, RiUserFill } from 'react-icons/ri';
+import {
+  RiBookMarkFill,
+  RiBox3Fill,
+  RiGraduationCapFill,
+  RiLightbulbFill,
+  RiMailFill,
+  RiUserFill
+} from 'react-icons/ri';
 
 export default function Header() {
   const [page, setPage] = useState('/');
@@ -73,7 +80,10 @@ export default function Header() {
           }
         >
           <p className="hidden sm:block">Formação</p>
-          <RiGraduationCapFill size={20} className="sm:hidden"></RiGraduationCapFill>
+          <RiGraduationCapFill
+            size={20}
+            className="sm:hidden"
+          ></RiGraduationCapFill>
         </Link>
         <Link
           href={'/stack'}

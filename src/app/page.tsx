@@ -7,8 +7,8 @@ export default function Home() {
       <article className="text-justify text-sm">
         <p>
           Olá! Sou o Guilherme, desenvolvedor de software de 21 anos com cerca
-          de 1 ano e meio de experiência como fullstack, atuando tanto
-          no front-end quanto no back-end. No front-end web, possuo conhecimento
+          de 1 ano e meio de experiência como fullstack, atuando tanto no
+          front-end quanto no back-end. No front-end web, possuo conhecimento
           nas principais linguagens e ferramentas, como HTML, CSS e JavaScript.
           Além disso, estou familiarizado com bibliotecas e frameworks modernos
           como o React e VueJs, que utilizo para criar interfaces dinâmicas.

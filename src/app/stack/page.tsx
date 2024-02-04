@@ -9,11 +9,11 @@ export default function Stack() {
       <Title title={'Stack'}></Title>
       {Content.stacks.map((stack) => {
         return (
-          <div>
+          <div key={stack.type}>
             <Subtitle subtitle={stack.type}></Subtitle>
             <div className="grid grid-cols-3 gap-2 sm:gap-1 sm:grid-cols-5">
               {stack.technologies.map((stack) => {
-                return <Card stack={stack}></Card>;
+                return <Card stack={stack} key={stack.name}></Card>;
               })}
             </div>
           </div>

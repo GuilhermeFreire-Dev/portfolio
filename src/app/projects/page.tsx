@@ -8,7 +8,7 @@ export default function Projects() {
       <Title title={'Principais projetos'}></Title>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-2">
         {Content.projects.map((project) => {
-          return <Card project={project}></Card>;
+          return <Card project={project} key={project.name}></Card>;
         })}
       </div>
     </div>

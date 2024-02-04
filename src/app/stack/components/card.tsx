@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 type Stack = {
   icon: ReactNode;
-  name: String;
+  name: string;
 };
 
 export default function Card({ stack }: { stack: Stack }) {

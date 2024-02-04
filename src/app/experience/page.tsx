@@ -3,7 +3,7 @@ import { Content } from '../lib/content';
 import Card from './components/card';
 
 export default function Experience() {
-  function icon(active: Boolean) {
+  function icon(active: boolean) {
     if (active) {
       return (
         <span className="w-3 h-3 flex items-center justify-center bg-green-600 rounded-full mt-2 mr-5">
@@ -18,17 +18,19 @@ export default function Experience() {
       <Title title={'Experiência'}></Title>
       {Content.experience.map((experience) => {
         return (
-          <div className="flex items-start">
+          <div className="flex items-start" key={experience.company}>
             {icon(experience.actual)}
             <div className="w-full">
               <div className="flex items-center">
-                <h3 className="text-base sm:text-lg font-semibold">{experience.company}</h3>
+                <h3 className="text-base sm:text-lg font-semibold">
+                  {experience.company}
+                </h3>
                 {experience.actual && (
                   <i className="ml-3 text-xs sm:text-sm">{'(atual)'}</i>
                 )}
               </div>
               {experience.positions.map((position) => {
-                return <Card position={position}></Card>;
+                return <Card position={position} key={position.name}></Card>;
               })}
             </div>
           </div>

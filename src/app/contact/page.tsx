@@ -7,7 +7,13 @@ export default function Contacts() {
       <Title title={'Contato'}></Title>
       {Content.contacts.map((contact) => {
         return (
-          <a href={contact.url} target="_blank" className="flex my-3">
+          <a
+            href={contact.url}
+            target="_blank"
+            className="flex my-3"
+            rel="noreferrer"
+            key={contact.label}
+          >
             {contact.icon}
             <p>{contact.label}</p>
           </a>

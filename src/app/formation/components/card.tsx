@@ -1,4 +1,3 @@
-
 type Formation = {
   image: string;
   name: string;

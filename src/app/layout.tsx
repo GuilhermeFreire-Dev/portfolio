@@ -16,8 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{backgroundImage: `url('/background-2.jpg')`}} className="bg-cover">
-      <body className={`${inter.className} backdrop-blur-xl min-h-screen h-full w-full`}>
+    <html
+      lang="en"
+      style={{ backgroundImage: `url('/background-2.jpg')` }}
+      className="bg-cover"
+    >
+      <body
+        className={`${inter.className} backdrop-blur-xl min-h-screen h-full w-full`}
+      >
         <div className="w-[96vw] lg:w-[50vw] mx-auto py-5">
           <Header></Header>
           {children}

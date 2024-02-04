@@ -7,7 +7,7 @@ export default function Formation() {
     <div>
       <Title title={'Formação Acadêmica'}></Title>
       {Content.formations.map((formation) => {
-        return <Card formation={formation}></Card>;
+        return <Card formation={formation} key={formation.name}></Card>;
       })}
     </div>
   );
