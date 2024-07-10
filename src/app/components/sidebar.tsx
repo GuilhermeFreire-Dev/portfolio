@@ -24,9 +24,9 @@ export default function Sidebar() {
           sidebar_items.map((item, index) => {
             return (
               <li className={item.path === currentPath() ? 
-                  "bg-yellow-sea-600 border p-2 rounded-2xl my-3" 
+                  "bg-yellow-sea-600 p-2 rounded-2xl my-3" 
                   : 
-                  "border p-2 rounded-2xl my-3"} 
+                  "p-2 rounded-2xl my-3"} 
                 key={index}>
                 <Link href={item.path}>
                   { item.icon }

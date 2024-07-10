@@ -6,7 +6,7 @@ export default function Card({
 }>) {
   return (
     <div className="bg-gradient-to-r from-indigo-600 to-blue-600 rounded-3xl p-4">
-      { children }
+      {children}
     </div>
-  )
+  );
 }

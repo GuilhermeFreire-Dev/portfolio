@@ -1,9 +1,18 @@
+'use client';
 import { FaRegClock } from 'react-icons/fa';
 import Card from '../components/card';
 import Title from '../components/title';
 import { Content } from '../lib/content';
+import SideBar from './components/sidebar';
+import { useState } from 'react';
+import { diff, toDate } from '../helpers/dateTimeParser';
+import Typography, { Variant } from '../components/tipography';
+import Section from '../components/section';
 
 export default function Experience() {
+  const [handleDetails, setHandleDetails] = useState(false);
+  const [details, setDetails] = useState(Object);
+
   function icon(active: boolean) {
     if (active) {
       return (
@@ -17,36 +26,64 @@ export default function Experience() {
     }
   }
 
+  function openDetails(details: object) {
+    setHandleDetails(true);
+    setDetails(details);
+  }
+
+  function closeDetails() {
+    setHandleDetails(false);
+    setDetails(() => {
+      {
+      }
+    });
+  }
+
   return (
-    <div>
-      <Title title={'Experiência'}></Title>
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
-        {Content.experiences.map((experience) => {
-          return (
-            <Card>
-              <div className="" key={experience.company}>
-                <div className='flex justify-between'>
-                  <h3 className="text-base sm:text-lg font-semibold">
-                    {experience.company}
-                  </h3>
-                  {icon(experience.actual)}
-                </div>
-                <div>
-                  <div className="">
-                    <h4 className="text-sm sm:text-base font-medium mr-3">
-                      {experience.position.name}
-                    </h4>
-                    <p className="text-xs sm:text-sm">
-                      {experience.position.duration}
-                    </p>
-                    <i className="text-xs">{experience.position.location}</i>
+    <>
+      <Section title={'Experiência'}>
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
+          {Content.experiences.map((experience) => {
+            return (
+              <div
+                onClick={() => {
+                  openDetails(experience);
+                }}
+                className="cursor-pointer"
+              >
+                <Card>
+                  <div className="" key={experience.company}>
+                    <div className="flex justify-between">
+                      <Typography variant={Variant.h6}>
+                        {experience.company}
+                      </Typography>
+                      {icon(experience.actual)}
+                    </div>
+                    <div>
+                      <div className="">
+                        <p>{experience.office}</p>
+                        <small>
+                          {diff(
+                            toDate(experience.start_at) ?? new Date(),
+                            toDate(experience.end_at) ?? new Date()
+                          )}
+                        </small>
+                        <br />
+                        <i className="text-xs">{experience.location}</i>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </Card>
               </div>
-            </Card>
-          );
-        })}
-      </div>
-    </div>
+            );
+          })}
+        </div>
+      </Section>
+      <SideBar
+        handle={closeDetails}
+        state={handleDetails}
+        content={details}
+      ></SideBar>
+    </>
   );
 }

@@ -124,25 +124,24 @@ export const Content = {
     {
       actual: true,
       company: 'Novo Mundo SA',
-      position: {
-        name: 'Desenvolvedor JR',
-        duration: '8m',
-        location: 'híbrido',
-        attributions: [
-          'Desenvolvimento de APIs utilizando o framework Laravel',
-          'Desenvolvimento de páginas web responsivas com VueJs'
-        ]
-      }
+      office: 'Analista de Sistemas',
+      start_at: '2023-06-30T00:00:00.000Z',
+      end_at: '',
+      location: 'híbrido',
+      tecnologies: [
+        'react'
+      ],
+      activities: []
     },
     {
       actual: false,
       company: 'Novo Mundo SA',
-      position: {
-        name: 'Desenvolvedor Trainee',
-        duration: '10m',
-        location: 'presencial',
-        attributions: ['Desenvolvimento de páginas web com VueJs']
-      }
+      office: 'Desenvolvedor Trainee',
+      start_at: '2022-10-17T00:00:00.000Z',
+      end_at: '2023-06-30T00:00:00.000Z',
+      location: 'presencial',
+      tecnologies: [],
+      activities: []
     }
   ],
   contacts: [
