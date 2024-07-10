@@ -120,27 +120,29 @@ export const Content = {
       ]
     }
   ],
-  experience: [
+  experiences: [
     {
       actual: true,
       company: 'Novo Mundo SA',
-      positions: [
-        {
-          name: 'Desenvolvedor JR',
-          duration: '8m',
-          location: 'híbrido',
-          attributions: [
-            'Desenvolvimento de APIs utilizando o framework Laravel',
-            'Desenvolvimento de páginas web responsivas com VueJs'
-          ]
-        },
-        {
-          name: 'Desenvolvedor Trainee',
-          duration: '10m',
-          location: 'presencial',
-          attributions: ['Desenvolvimento de páginas web com VueJs']
-        }
-      ]
+      position: {
+        name: 'Desenvolvedor JR',
+        duration: '8m',
+        location: 'híbrido',
+        attributions: [
+          'Desenvolvimento de APIs utilizando o framework Laravel',
+          'Desenvolvimento de páginas web responsivas com VueJs'
+        ]
+      }
+    },
+    {
+      actual: false,
+      company: 'Novo Mundo SA',
+      position: {
+        name: 'Desenvolvedor Trainee',
+        duration: '10m',
+        location: 'presencial',
+        attributions: ['Desenvolvimento de páginas web com VueJs']
+      }
     }
   ],
   contacts: [
