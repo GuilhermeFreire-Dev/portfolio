@@ -14,7 +14,7 @@ export const SideBarItems = {
     },
     {
       icon: (<LuGraduationCap size={36}></LuGraduationCap>),
-      text: 'Formação Academica',
+      text: 'Formação',
       path: '/formation'
     },
     {

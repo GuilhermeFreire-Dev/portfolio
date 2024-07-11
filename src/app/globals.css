@@ -4,7 +4,7 @@
 
 @layer components {
   .custom-background {
-    background-image: url('/background.jpg');
+    background-image: url('/image.png');
   }
   .custom-background-dark {
     background-image: url('/background-dark.jpg');
