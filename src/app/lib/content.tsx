@@ -101,15 +101,6 @@ export const Content = {
       type: 'Ferramentas',
       technologies: [
         {
-          icon: (
-            <IoLogoTux
-              size={42}
-              className="text-black dark:text-white"
-            ></IoLogoTux>
-          ),
-          name: 'WSL 2'
-        },
-        {
           icon: <FaFigma size={42} className=""></FaFigma>,
           name: 'Figma'
         },
@@ -184,15 +175,15 @@ export const Content = {
       image: '/puc-goias.png',
       name: 'Ciência da Computação',
       institute: 'Pontifícia Universidade Católica de Goiás',
-      start_at: 'Jan.2020',
-      end_at: 'Dez. 2024'
+      start_at: '2020-02-01T00:00:00.000Z',
+      end_at: '2024-12-31T00:00:00.000Z'
     },
     {
       image: '/senai-logo.png',
       name: 'Desenvolvedor de Software',
       institute: 'Faculdade SENAI Fatesg',
-      start_at: 'Out.2022',
-      end_at: 'Jan. 2023'
+      start_at: '2022-10-17T00:00:00.000Z',
+      end_at: '2023-01-30T00:00:00.000Z'
     }
   ]
 };

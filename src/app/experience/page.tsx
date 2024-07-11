@@ -5,7 +5,7 @@ import Title from '../components/title';
 import { Content } from '../lib/content';
 import SideBar from './components/sidebar';
 import { useState } from 'react';
-import { diff, toDate } from '../helpers/dateTimeParser';
+import { diff, toDate } from '../helpers/dateTime';
 import Typography, { Variant } from '../components/tipography';
 import Section from '../components/section';
 
@@ -33,17 +33,14 @@ export default function Experience() {
 
   function closeDetails() {
     setHandleDetails(false);
-    setDetails(() => {
-      {
-      }
-    });
+    setDetails({});
   }
 
   return (
     <>
       <Section title={'Experiência'}>
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
-          {Content.experiences.map((experience) => {
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          {Content.experiences.map((experience, index) => {
             return (
               <div
                 onClick={() => {
@@ -51,7 +48,7 @@ export default function Experience() {
                 }}
                 className="cursor-pointer"
               >
-                <Card>
+                <Card key={index}>
                   <div className="" key={experience.company}>
                     <div className="flex justify-between">
                       <Typography variant={Variant.h6}>

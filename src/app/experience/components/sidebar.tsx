@@ -1,6 +1,6 @@
 'use client';
 import Typography, { Variant } from '@/app/components/tipography';
-import { toDate } from '@/app/helpers/dateTimeParser';
+import { toDate, yearsInterval } from '@/app/helpers/dateTime';
 import { LuX } from 'react-icons/lu';
 
 type Experience = {
@@ -23,12 +23,6 @@ export default function SideBar({
   state: boolean;
   content: Experience;
 }) {
-  function officeDuration(start_date: string, end_date: string) {
-    const start = toDate(start_date)?.getFullYear();
-    const end = toDate(end_date)?.getFullYear();
-    return `${start} - ${end ?? 'atualmente'}`;
-  }
-
   return (
     state && (
       <div className="absolute top-0 left-0 flex justify-end w-full h-full bg-black-950 bg-opacity-50">
@@ -41,7 +35,7 @@ export default function SideBar({
           <div>
             <Typography variant={Variant.h2}>{content.company}</Typography>
             <Typography variant={Variant.h6}>{content.office}</Typography>
-            <p>{officeDuration(content.start_at, content.end_at)}</p>
+            <p>{yearsInterval(content.start_at, content.end_at)}</p>
             <br />
             <Typography variant={Variant.h3}>Tecnologias utilizadas</Typography>
             <ul className="ml-5">

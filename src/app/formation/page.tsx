@@ -1,22 +1,32 @@
 import Card from '../components/card';
+import Section from '../components/section';
+import Typography, { Variant } from '../components/tipography';
 import Title from '../components/title';
+import { yearsInterval } from '../helpers/dateTime';
 import { Content } from '../lib/content';
 
 export default function Formation() {
   return (
-    <div>
-      <Title title={'Formação Acadêmica'}></Title>
-      <div className='grid grid-cols-1 sm:grid-cols-4 gap-5'>
-        {Content.formations.map((formation) => {
-          return <Card>
-            <div className="w-4/5 mx-4">
-              <h3 className="text-base sm:text-lg font-semibold">{formation.name}</h3>
-              <p className="text-sm sm:text-base my-1">{formation.institute}</p>
-              <p className="text-xs">{`${formation.start_at} - ${formation.end_at}`}</p>
-            </div>
-          </Card>;
+    <Section title={'Formação Acadêmica'}>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        {Content.formations.map((formation, index) => {
+          return (
+            <Card key={index}>
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <Typography variant={Variant.h6}>{formation.name}</Typography>
+                  <p className="text-sm sm:text-base my-1">
+                    {formation.institute}
+                  </p>
+                </div>
+                <p className="text-xs">
+                  {yearsInterval(formation.start_at, formation.end_at)}
+                </p>
+              </div>
+            </Card>
+          );
         })}
       </div>
-    </div>
+    </Section>
   );
 }

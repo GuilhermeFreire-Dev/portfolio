@@ -18,8 +18,8 @@ export default function Sidebar() {
   }
 
   return (
-    <nav className="px-16">
-      <ul>
+    <nav className="w-1/5 flex justify-center">
+      <ul className="max-w-fit">
         {
           sidebar_items.map((item, index) => {
             return (
