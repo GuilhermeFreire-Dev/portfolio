@@ -15,7 +15,7 @@ export default function Experience() {
     if (active) {
       return (
         <div className="flex items-center">
-          <small className="mr-3">atualmente</small>
+          <small className="mr-3 md:hidden lg:block">atualmente</small>
           <span className="w-3 h-3 flex items-center justify-center bg-white rounded-full">
             <span className="w-3 h-3 bg-white rounded-full animate-ping"></span>
           </span>

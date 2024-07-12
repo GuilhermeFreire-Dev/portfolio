@@ -28,7 +28,7 @@ export default function SideBar({
       className={`absolute top-0 right-0 flex justify-end ${state ? 'w-screen' : 'w-0'} h-screen bg-black-950 bg-opacity-50 overflow-hidden`}
     >
       <div
-        className={`transition-[width] ease-in h-full p-4 bg-stone-900 overflow-y-scroll ${state ? 'w-5/6 sm:w-1/4' : 'w-0'}`}
+        className={`transition-[width] ease-in h-full p-4 bg-stone-900 overflow-y-scroll ${state ? 'w-5/6 sm:w-1/2 lg:w-1/4' : 'w-0'}`}
       >
         <div className="mb-5">
           <button onClick={handle}>
