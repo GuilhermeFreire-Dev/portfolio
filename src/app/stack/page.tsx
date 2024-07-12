@@ -6,7 +6,7 @@ import Typography, { Variant } from '../components/tipography';
 export default function Stack() {
   return (
     <Section title={'Tecnologias'}>
-      <div className="px-3 sm:pl-0 sm:h-[76vh] overflow-y-scroll">
+      <div className="px-3 sm:pl-0">
         {Content.stacks.map((stack, index) => {
           return (
             <div key={index}>

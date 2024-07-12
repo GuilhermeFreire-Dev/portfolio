@@ -15,7 +15,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       <Header isHome={isHome}></Header>
       <main className="flex flex-col-reverse sm:flex-row sm:justify-center">
         {!isHome && <Sidebar></Sidebar>}
-        <section className="w-full sm:w-4/5 p-3 mr-3 h-[80vh] sm:h-auto sm:max-h-[80vh] overflow-hidden">
+        <section className="w-full sm:w-4/5 p-3 mr-3 h-[80vh] sm:h-auto sm:max-h-[80vh] overflow-y-scroll">
           {children}
         </section>
       </main>

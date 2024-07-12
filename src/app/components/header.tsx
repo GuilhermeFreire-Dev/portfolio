@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { LuGithub, LuLinkedin } from 'react-icons/lu';
+import Typography, { Variant } from './tipography';
 
 export default function Header({ isHome }: { isHome: boolean }) {
   return (
@@ -9,12 +10,18 @@ export default function Header({ isHome }: { isHome: boolean }) {
       style={isHome ? { justifyContent: 'flex-end' } : {}}
     >
       <Link href={'/'} className={isHome ? 'hidden' : 'w-56 sm:w-auto'}>
-        <h3>Guilherme Freire | Desenvolvedor de Software</h3>
+        <Typography variant={Variant.h6}>
+          Guilherme Freire | Desenvolvedor de Software
+        </Typography>
       </Link>
       <div className="flex">
-        <LuGithub size={28}></LuGithub>
+        <Link href={'https://github.com/GuilhermeFreire-Dev/'}>
+          <LuGithub size={28}></LuGithub>
+        </Link>
         <hr className="mx-3" />
-        <LuLinkedin size={28}></LuLinkedin>
+        <Link href={'https://linkedin.com/in/guilhermefreiremagalhaes'}>
+          <LuLinkedin size={28}></LuLinkedin>
+        </Link>
       </div>
     </header>
   );
