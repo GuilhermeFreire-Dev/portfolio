@@ -1,7 +1,5 @@
 'use client';
-import { FaRegClock } from 'react-icons/fa';
 import Card from '../components/card';
-import Title from '../components/title';
 import { Content } from '../lib/content';
 import SideBar from './components/sidebar';
 import { useState } from 'react';
@@ -47,8 +45,9 @@ export default function Experience() {
                   openDetails(experience);
                 }}
                 className="cursor-pointer"
+                key={index}
               >
-                <Card key={index}>
+                <Card>
                   <div className="" key={experience.company}>
                     <div className="flex justify-between">
                       <Typography variant={Variant.h6}>

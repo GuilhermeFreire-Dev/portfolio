@@ -10,10 +10,10 @@ import {
   IoLogoLinkedin,
   IoLogoNodejs,
   IoLogoReact,
-  IoLogoTux,
   IoLogoVue,
   IoMail
 } from 'react-icons/io5';
+import { LuGithub, LuLinkedin } from 'react-icons/lu';
 import { SiClickup, SiTailwindcss } from 'react-icons/si';
 
 export const Content = {
@@ -120,9 +120,20 @@ export const Content = {
       end_at: '',
       location: 'híbrido',
       tecnologies: [
-        'react'
+        'VueJs',
+        'HTML',
+        'CSS',
+        'Tailwind CSS',
+        'PHP 7.4',
+        'PHP 8.2',
+        'Laravel',
+        'Banco de dados Oracle'
       ],
-      activities: []
+      activities: [
+        'Desenvolvimento de APIs em Laravel;',
+        'Desenvolvimento front-end com VueJs;',
+        'Modelagem e implementação de estruturas de banco de dados.'
+      ]
     },
     {
       actual: false,
@@ -131,8 +142,19 @@ export const Content = {
       start_at: '2022-10-17T00:00:00.000Z',
       end_at: '2023-06-30T00:00:00.000Z',
       location: 'presencial',
-      tecnologies: [],
-      activities: []
+      tecnologies: [
+        'VueJs',
+        'HTML',
+        'CSS',
+        'Bootstrap 4',
+        'PHP 7.4',
+        'Laravel'
+      ],
+      activities: [
+        'Desenvolvimento de APIs em Laravel;',
+        'Desenvolvimento front-end com VueJs;',
+        'Desenvolvimento de documentação para os sitemas.'
+      ]
     }
   ],
   contacts: [
@@ -184,6 +206,18 @@ export const Content = {
       institute: 'Faculdade SENAI Fatesg',
       start_at: '2022-10-17T00:00:00.000Z',
       end_at: '2023-01-30T00:00:00.000Z'
+    }
+  ],
+  platforms: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/GuilhermeFreire-Dev/',
+      icon: <LuGithub size={28}></LuGithub>
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://linkedin.com/in/guilhermefreiremagalhaes',
+      icon: <LuLinkedin size={28}></LuLinkedin>
     }
   ]
 };

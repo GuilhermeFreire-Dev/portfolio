@@ -1,16 +1,10 @@
 'use client';
 
 import { SideBarItems } from '../lib/sidebar-items';
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Sidebar() {
   const sidebar_items = SideBarItems.items;
-  const [currentIdx, setCurrentIdx] = useState(currentPath());
-
-  useEffect(() => {
-    setCurrentIdx(currentPath());
-  }, []);
 
   function currentPath() {
     return typeof window !== 'undefined' ? window.location.pathname : '';
@@ -31,7 +25,7 @@ export default function Sidebar() {
             >
               <Link
                 href={item.path}
-                className=" transition-[width] ease-in-out delay-150 flex items-center w-9 overflow-hidden lg:hover:w-36"
+                className="transition-[width] ease-in-out delay-150 flex items-center w-9 overflow-hidden lg:hover:w-36"
               >
                 <div className="mr-2">{item.icon}</div>
                 <p className="hidden sm:block">{item.text}</p>

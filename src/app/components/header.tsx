@@ -1,13 +1,12 @@
 'use client';
 import Link from 'next/link';
-import { LuGithub, LuLinkedin } from 'react-icons/lu';
 import Typography, { Variant } from './tipography';
+import { Content } from '../lib/content';
 
 export default function Header({ isHome }: { isHome: boolean }) {
   return (
     <header
-      className="flex justify-between items-center py-6 mb-2 mx-3 sm:mb-10 sm:w-4/5 sm:mx-auto"
-      style={isHome ? { justifyContent: 'flex-end' } : {}}
+      className={`flex ${isHome ? 'flex-end' : 'justify-between'} items-center py-6 mb-2 mx-3 sm:mb-10 sm:w-4/5 sm:mx-auto`}
     >
       <Link href={'/'} className={isHome ? 'hidden' : 'w-56 sm:w-auto'}>
         <Typography variant={Variant.h6}>
@@ -15,13 +14,13 @@ export default function Header({ isHome }: { isHome: boolean }) {
         </Typography>
       </Link>
       <div className="flex">
-        <Link href={'https://github.com/GuilhermeFreire-Dev/'}>
-          <LuGithub size={28}></LuGithub>
-        </Link>
-        <hr className="mx-3" />
-        <Link href={'https://linkedin.com/in/guilhermefreiremagalhaes'}>
-          <LuLinkedin size={28}></LuLinkedin>
-        </Link>
+        {Content.platforms.map((platform, index) => {
+          return (
+            <Link href={platform.url} key={index} className="mx-2">
+              {platform.icon}
+            </Link>
+          );
+        })}
       </div>
     </header>
   );

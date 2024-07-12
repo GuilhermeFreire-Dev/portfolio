@@ -1,7 +1,6 @@
 import Card from '../components/card';
 import Section from '../components/section';
 import Typography, { Variant } from '../components/tipography';
-import Title from '../components/title';
 import { yearsInterval } from '../helpers/dateTime';
 import { Content } from '../lib/content';
 
