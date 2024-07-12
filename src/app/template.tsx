@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Sidebar from './components/sidebar';
 import Header from './components/header';
+import { parse } from './helpers/dateTime';
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const [isHome, setIsHome] = useState(false);
@@ -19,6 +20,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
           {children}
         </section>
       </main>
+      <footer
+        className={`${isHome ? 'block' : 'hidden'} absolute bottom-0 px-2 opacity-20`}
+      >
+        <small>v1.1.0</small> <small>{parse(new Date().toISOString())}</small>
+      </footer>
     </>
   );
 }
