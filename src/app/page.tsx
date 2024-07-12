@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="w-5/6 lg:w-3/4 mx-auto">
+    <div className="lg:w-3/4 mx-auto">
       <div className="my-10 flex flex-col-reverse items-center sm:flex-row sm:justify-between">
         <div className="my-5 sm:my-0">
           <Typography variant={Variant.h1}>Guilherme Freire</Typography>

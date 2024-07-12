@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { SideBarItems } from '../lib/sidebar-items';
+import { NavBarItems } from '../lib/navbar-items';
 import Link from 'next/link';
 
 export default function Sidebar() {
@@ -16,9 +16,9 @@ export default function Sidebar() {
   }
 
   return (
-    <nav className="w-full sm:w-1/5">
+    <nav className="w-full h-[10vh] sm:w-1/5 sm:h-auto">
       <ul className="sm:max-w-fit sm:mx-auto flex justify-evenly sm:justify-normal sm:flex-col items-center">
-        {SideBarItems.items.map((item, index) => {
+        {NavBarItems.items.map((item, index) => {
           return (
             <li
               className={

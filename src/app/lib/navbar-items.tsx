@@ -6,7 +6,7 @@ import {
   LuUser2
 } from 'react-icons/lu';
 
-export const SideBarItems = {
+export const NavBarItems = {
   items: [
     {
       icon: <LuUser2 size={36}></LuUser2>,
