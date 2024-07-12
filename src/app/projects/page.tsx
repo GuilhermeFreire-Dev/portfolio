@@ -1,6 +1,5 @@
 import { IoLogoGithub } from 'react-icons/io5';
 import Card from '../components/card';
-import Title from '../components/title';
 import { Content } from '../lib/content';
 import { TbExternalLink } from 'react-icons/tb';
 import Section from '../components/section';
@@ -17,7 +16,7 @@ export default function Projects() {
 
   return (
     <Section title={'Principais projetos'}>
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         {Content.projects.map((project, index) => {
           return (
             <Card key={index}>

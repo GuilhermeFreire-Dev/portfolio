@@ -1,6 +1,6 @@
 'use client';
 import Typography, { Variant } from '@/app/components/tipography';
-import { toDate, yearsInterval } from '@/app/helpers/dateTime';
+import { yearsInterval } from '@/app/helpers/dateTime';
 import { LuX } from 'react-icons/lu';
 
 type Experience = {
@@ -26,7 +26,7 @@ export default function SideBar({
   return (
     state && (
       <div className="absolute top-0 left-0 flex justify-end w-full h-full bg-black-950 bg-opacity-50">
-        <div className="w-1/4 h-full p-4 bg-black-900">
+        <div className="w-5/6 sm:w-1/4 h-full p-4 bg-black-900">
           <div className="mb-5">
             <button onClick={handle}>
               <LuX size={28}></LuX>

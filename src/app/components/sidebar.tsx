@@ -17,8 +17,8 @@ export default function Sidebar() {
   }
 
   return (
-    <nav className="w-1/5">
-      <ul className="max-w-fit mx-auto flex flex-col items-center">
+    <nav className="w-full sm:w-1/5">
+      <ul className="sm:max-w-fit sm:mx-auto flex justify-evenly sm:justify-normal sm:flex-col items-center">
         {sidebar_items.map((item, index) => {
           return (
             <li
@@ -31,10 +31,10 @@ export default function Sidebar() {
             >
               <Link
                 href={item.path}
-                className=" transition-[width] ease-in-out delay-150 flex items-center w-9 overflow-hidden hover:w-36"
+                className=" transition-[width] ease-in-out delay-150 flex items-center w-9 overflow-hidden lg:hover:w-36"
               >
                 <div className="mr-2">{item.icon}</div>
-                <p>{item.text}</p>
+                <p className="hidden sm:block">{item.text}</p>
               </Link>
             </li>
           );
