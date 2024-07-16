@@ -20,17 +20,10 @@ export default function Sidebar() {
       <ul className="sm:max-w-fit sm:mx-auto flex justify-evenly sm:justify-normal sm:flex-col items-center">
         {NavBarItems.items.map((item, index) => {
           return (
-            <li
-              className={
-                item.path === currentPath
-                  ? 'bg-white/30 backdrop-blur-xl p-2 rounded-2xl my-2'
-                  : 'p-2 rounded-2xl my-2'
-              }
-              key={index}
-            >
+            <li key={index}>
               <Link
                 href={item.path}
-                className="transition-[width] ease-in-out flex items-center w-9 overflow-hidden lg:hover:w-36"
+                className={`${item.path === currentPath ? 'bg-white/30 backdrop-blur-xl' : ''} p-2 rounded-2xl my-2 transition-[width] ease-in-out flex items-center w-[52px] overflow-hidden lg:hover:w-36`}
               >
                 <div className="mr-2">{item.icon}</div>
                 <p className="hidden sm:block">{item.text}</p>
