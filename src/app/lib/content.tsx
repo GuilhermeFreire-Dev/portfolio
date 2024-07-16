@@ -10,10 +10,10 @@ import {
   IoLogoLinkedin,
   IoLogoNodejs,
   IoLogoReact,
-  IoLogoTux,
   IoLogoVue,
   IoMail
 } from 'react-icons/io5';
+import { LuGithub, LuLinkedin } from 'react-icons/lu';
 import { SiClickup, SiTailwindcss } from 'react-icons/si';
 
 export const Content = {
@@ -101,15 +101,6 @@ export const Content = {
       type: 'Ferramentas',
       technologies: [
         {
-          icon: (
-            <IoLogoTux
-              size={42}
-              className="text-black dark:text-white"
-            ></IoLogoTux>
-          ),
-          name: 'WSL 2'
-        },
-        {
           icon: <FaFigma size={42} className=""></FaFigma>,
           name: 'Figma'
         },
@@ -120,26 +111,49 @@ export const Content = {
       ]
     }
   ],
-  experience: [
+  experiences: [
     {
       actual: true,
       company: 'Novo Mundo SA',
-      positions: [
-        {
-          name: 'Desenvolvedor JR',
-          duration: '8m',
-          location: 'híbrido',
-          attributions: [
-            'Desenvolvimento de APIs utilizando o framework Laravel',
-            'Desenvolvimento de páginas web responsivas com VueJs'
-          ]
-        },
-        {
-          name: 'Desenvolvedor Trainee',
-          duration: '10m',
-          location: 'presencial',
-          attributions: ['Desenvolvimento de páginas web com VueJs']
-        }
+      office: 'Analista de Sistemas',
+      start_at: '2023-06-30T00:00:00.000Z',
+      end_at: '',
+      location: 'híbrido',
+      tecnologies: [
+        'VueJs',
+        'HTML',
+        'CSS',
+        'Tailwind CSS',
+        'PHP 7.4',
+        'PHP 8.2',
+        'Laravel',
+        'Banco de dados Oracle'
+      ],
+      activities: [
+        'Desenvolvimento de APIs em Laravel;',
+        'Desenvolvimento front-end com VueJs;',
+        'Modelagem e implementação de estruturas de banco de dados.'
+      ]
+    },
+    {
+      actual: false,
+      company: 'Novo Mundo SA',
+      office: 'Desenvolvedor Trainee',
+      start_at: '2022-10-17T00:00:00.000Z',
+      end_at: '2023-06-30T00:00:00.000Z',
+      location: 'presencial',
+      tecnologies: [
+        'VueJs',
+        'HTML',
+        'CSS',
+        'Bootstrap 4',
+        'PHP 7.4',
+        'Laravel'
+      ],
+      activities: [
+        'Desenvolvimento de APIs em Laravel;',
+        'Desenvolvimento front-end com VueJs;',
+        'Desenvolvimento de documentação para os sitemas.'
       ]
     }
   ],
@@ -183,15 +197,27 @@ export const Content = {
       image: '/puc-goias.png',
       name: 'Ciência da Computação',
       institute: 'Pontifícia Universidade Católica de Goiás',
-      start_at: 'Jan.2020',
-      end_at: 'Dez. 2024'
+      start_at: '2020-02-01T00:00:00.000Z',
+      end_at: '2024-12-31T00:00:00.000Z'
     },
     {
       image: '/senai-logo.png',
       name: 'Desenvolvedor de Software',
       institute: 'Faculdade SENAI Fatesg',
-      start_at: 'Out.2022',
-      end_at: 'Jan. 2023'
+      start_at: '2022-10-17T00:00:00.000Z',
+      end_at: '2023-01-30T00:00:00.000Z'
+    }
+  ],
+  platforms: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/GuilhermeFreire-Dev/',
+      icon: <LuGithub size={28}></LuGithub>
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://linkedin.com/in/guilhermefreiremagalhaes',
+      icon: <LuLinkedin size={28}></LuLinkedin>
     }
   ]
 };

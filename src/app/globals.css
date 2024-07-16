@@ -4,10 +4,31 @@
 
 @layer components {
   .custom-background {
-    background-image: url('/background.jpg');
+    background-image: url('/image.png');
   }
   .custom-background-dark {
     background-image: url('/background-dark.jpg');
+  }
+}
+
+div::-webkit-scrollbar, section::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  div::-webkit-scrollbar, section::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    display: block;
+  }
+  
+  div::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb{
+    background-color: #333333;
+    border-radius: 33px;
+  }
+  
+  div::-webkit-scrollbar-track, section::-webkit-scrollbar-track{
+    background-color: transparent;
   }
 }
 

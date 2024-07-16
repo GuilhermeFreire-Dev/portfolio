@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from './components/header';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,17 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="bg-cover bg-center bg-no-repeat custom-background dark:custom-background-dark"
-    >
+    <html lang="en">
       <body
-        className={`${inter.className} backdrop-blur-sm min-h-screen h-full w-full`}
+        className={`${inter.className} bg-black-950 text-black-50 custom-background px-2 h-screen grid grid-cols-1 grid-rows-10 sm:px-0 md:block`}
       >
-        <div className="w-[96vw] lg:w-[50vw] mx-auto py-5">
-          <Header></Header>
-          {children}
-        </div>
+        {children}
+        <Analytics></Analytics>
       </body>
     </html>
   );
