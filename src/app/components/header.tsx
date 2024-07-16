@@ -6,7 +6,7 @@ import { Content } from '../lib/content';
 export default function Header({ isHome }: { isHome: boolean }) {
   return (
     <header
-      className={`flex ${isHome ? 'justify-end' : 'justify-between'} items-center py-3 mx-3 h-[12vh] sm:py-6 sm:w-4/5 sm:mx-auto`}
+      className={`flex ${isHome ? 'justify-end' : 'justify-between'} row-span-1 items-center py-3 mx-3 sm:py-6 sm:w-4/5 sm:mx-auto`}
     >
       <Link href={'/'} className={isHome ? 'hidden' : 'w-56 sm:w-auto'}>
         <Typography variant={Variant.h6}>

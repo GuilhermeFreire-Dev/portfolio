@@ -16,7 +16,7 @@ export default function Sidebar() {
   }
 
   return (
-    <nav className="w-full absolute bottom-0 left-0 py-2 sm:py-0 sm:static sm:w-1/5 sm:h-auto">
+    <nav className="w-full py-2 sm:py-0 sm:static sm:w-1/5 sm:h-auto">
       <ul className="sm:max-w-fit sm:mx-auto flex justify-evenly sm:justify-normal sm:flex-col items-center">
         {NavBarItems.items.map((item, index) => {
           return (
