@@ -12,8 +12,7 @@ export default function About() {
       <div className="">
         <article className="text-justify sm:w-4/5">
           <p>
-            Me chamo Guilherme Freire, sou desenvolvedor de software com
-            formação em andamento em Ciência da Computação.
+            Me chamo Guilherme Freire, sou desenvolvedor de software com formação em Ciências da Computação.
           </p>
           <br />
           <p>

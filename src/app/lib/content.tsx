@@ -35,10 +35,6 @@ export const Content = {
           name: 'VueJs'
         },
         {
-          icon: <IoLogoReact size={42} className="text-blue-500"></IoLogoReact>,
-          name: 'ReactJs'
-        },
-        {
           icon: (
             <IoLogoHtml5 size={42} className="text-orange-500"></IoLogoHtml5>
           ),
@@ -68,12 +64,6 @@ export const Content = {
         {
           icon: <BiLogoPhp size={42} className="text-purple-900"></BiLogoPhp>,
           name: 'PHP'
-        },
-        {
-          icon: (
-            <IoLogoNodejs size={42} className="text-lime-500"></IoLogoNodejs>
-          ),
-          name: 'NodeJs'
         }
       ]
     },
@@ -114,10 +104,32 @@ export const Content = {
   experiences: [
     {
       actual: true,
+      company: 'Rede JS Peças',
+      office: 'Analista de Desenvolvimento Jr',
+      start_at: '2024-09-23T00:00:00.000Z',
+      end_at: '',
+      location: 'híbrido',
+      tecnologies: [
+        'VueJs',
+        'Tailwind CSS',
+        'PHP',
+        'Laravel',
+        'Banco de dados Oracle',
+        'Sankhya',
+        'Python'
+      ],
+      activities: [
+        'Desenvolvimento full-stack em Laravel e VueJs',
+        'Modelagem e implementação de estruturas de banco de dados.',
+        'Desenvolvimento de integrações com o ERP Sankhya'
+      ]
+    },
+    {
+      actual: false,
       company: 'Novo Mundo SA',
       office: 'Analista de Sistemas',
       start_at: '2023-06-30T00:00:00.000Z',
-      end_at: '',
+      end_at: '2024-09-23T00:00:00.000Z',
       location: 'híbrido',
       tecnologies: [
         'VueJs',

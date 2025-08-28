@@ -21,7 +21,11 @@ export default function Home() {
           </Typography>
         </div>
         <div>
-          <img src="/apple-avatar-2.png" className="" width={200} alt="" />
+          <img
+            src="/perfil.jpg"
+            className="rounded-full w-52 h-52 object-cover"
+            alt=""
+          />
         </div>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-5 grid-rows-2 gap-4 h-52">
