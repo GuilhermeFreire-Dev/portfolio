@@ -12,42 +12,34 @@ export default function About() {
       <div className="">
         <article className="text-justify sm:w-4/5">
           <p>
-            Me chamo Guilherme Freire, sou desenvolvedor de software com
-            formação em andamento em Ciência da Computação.
+            Me chamo Guilherme Freire e sou desenvolvedor de software formado em
+            Ciências da Computação.
           </p>
           <br />
           <p>
-            Tenho experiencia no desenvolvimento front-end. Em minhas
-            atividades, estive inserido em desafios para transformar as ideias
-            dos stakeholders em algo que pudesse ser visto em telas de
-            smartphones, tablets e desktops. Sempre participando desde a
-            concepção do layout até a sua implementação, alinhando requisitos e
-            boas práticas para o desenvolvimento de um bom produto e que atenda
-            às necessidades propostas.
+            Ao longo da minha carreira, venho atuando como desenvolvedor
+            full-stack, participando de todo o ciclo de desenvolvimento: desde o
+            levantamento de requisitos e a elaboração do projeto, passando pelo
+            design de interfaces, até a implementação do código. Embora tenha
+            experiência em todas essas etapas, meu ponto forte está em
+            compreender a lógica e os requisitos do negócio e transformá-los em
+            soluções eficientes por meio do código.
           </p>
           <br />
           <p>
-            Também possuo experiência no desenvolvimento back-end. Aqui, estive
-            imerso em desafios mais intensos, construindo aplicações de grande
-            relevância para o negócio e traduzindo as regras de negócio para o
-            código.
+            As principais tecnologias com as quais trabalho são Laravel e
+            Vue.js. No back-end, utilizando Laravel, desenvolvi principalmente
+            APIs para integração com outros sistemas e comunicação com o
+            front-end, com destaque para integrações com plataformas de
+            pagamento. Já no front-end, atuei de forma consistente no
+            desenvolvimento de interfaces web funcionais e intuitivas.
           </p>
           <p>
-            Participei do desenvolvimento de APIs (
-            <i>Application Programming Interface</i>) para integrar com sistemas
-            externos. Dentre os projetos em que atuei como desenvolvedor
-            back-end, destaca-se o desenvolvimento de uma API para integração
-            com o Nupay. Neste projeto, pude experienciar conceitos de
-            comunicação HTTP, tokens de autenticação, criptografia, projeto de
-            banco de dados e mesageria.
-          </p>
-          <br />
-          <p>
-            Sei que ainda tenho muito o que aprender. Como desenvolvedor, tenho
-            a consciência de que os estudos e o aprendizado sempre estarão em
-            meu dia a dia. Mas isso não é um problema, sou motivado por desafios
-            e inovação; portanto, estou sempre buscando evoluir e aprender cada
-            vez mais.
+            Tenho grande interesse em criar soluções, resolver desafios
+            complexos e investigar como as coisas funcionam. Sou movido pelo
+            aprendizado contínuo e busco constantemente aprimorar minhas
+            habilidades. Além disso, gosto de compartilhar conhecimento e trocar
+            experiências que contribuam para o crescimento coletivo.
           </p>
           <br />
           <p>

@@ -3,9 +3,5 @@ export default function Card({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div className="bg-gradient-to-r from-indigo-600 to-blue-600 rounded-3xl p-4">
-      {children}
-    </div>
-  );
+  return <div className="bg-blue-600 rounded-3xl p-4">{children}</div>;
 }

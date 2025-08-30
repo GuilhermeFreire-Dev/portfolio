@@ -24,7 +24,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         </section>
       </main>
       <footer className={`${isHome ? 'block' : 'hidden'} px-2 opacity-20`}>
-        <small>v1.1.0</small> <small>{'16/07/2024'}</small>
+        <small>v1.1.1</small> <small>{'29/08/2025'}</small>
       </footer>
     </>
   );
