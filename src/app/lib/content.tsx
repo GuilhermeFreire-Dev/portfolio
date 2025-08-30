@@ -8,8 +8,6 @@ import {
   IoLogoJavascript,
   IoLogoLaravel,
   IoLogoLinkedin,
-  IoLogoNodejs,
-  IoLogoReact,
   IoLogoVue,
   IoMail
 } from 'react-icons/io5';
